@@ -1,0 +1,40 @@
+<%= form_with model: @config, local: true do |form| %>
+
+  <% if @config.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        Errors:
+      </h2>
+      <ul>
+        <% @config.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+  <p>
+    <%= form.label :key %><br>
+    <%= form.text_field :key %>
+  </p>
+ 
+  <p>
+    <%= form.label :min %><br>
+    <%= form.text_field :min %>
+  </p>
+
+  <p>
+    <%= form.label :max %><br>
+    <%= form.text_field :max %>
+  </p>
+
+  <p>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+ 
+<% end %>
