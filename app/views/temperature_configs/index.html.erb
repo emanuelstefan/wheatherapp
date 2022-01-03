@@ -8,7 +8,7 @@
     <th>Actions</th>
   </tr>
  
-  <% @configs.each do |config| %>
+  <% @configs&.each do |config| %>
     <tr>
       <td><%= config.key %></td>
       <td><%= config.min %></td>

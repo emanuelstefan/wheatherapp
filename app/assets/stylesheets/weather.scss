@@ -1,0 +1,15 @@
+.result{
+  color: white;
+  margin: 10px 0;
+  width: 500px;
+}
+
+.success, .error {
+  padding: 10px;
+}
+.success{
+  background-color: green;
+}
+.error{
+  background-color: red;
+}

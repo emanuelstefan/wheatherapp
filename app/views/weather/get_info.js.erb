@@ -1,0 +1,9 @@
+document.querySelector('.result').classList.remove("success", "error");
+
+<% if @response && @response[:status]=='success' %>
+  document.querySelector('.result').classList.add("success");
+<% else %>
+  document.querySelector('.result').classList.add("error");
+<% end %>
+
+document.querySelector('.result').textContent = "<%= @response[:message] %>";

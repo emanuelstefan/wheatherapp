@@ -1,0 +1,14 @@
+<h1> Hello! Find out how hot is it today! </h1>
+
+<%= form_with(url: weather_get_info_path, data: { type: :json }, id: 'gigel') do %>
+  <%= label_tag(:zip, "Enter UK zip code:") %>
+  <%= text_field_tag(:zip) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<div class='result'>
+</div>
+
+<br>
+
+<%= link_to 'Configure temperature aliases', temperature_configs_path %>

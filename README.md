@@ -1,24 +1,25 @@
-# README
+# How Hot is it Today?
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+`How Hot is it Today?` is a demo Rails application that can tell you if the weather is either cold, warm or hot, based on some predefined (but editable) ranges. I developed it as a technical assignment to serve for my technical interview.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+after cloning the project, go into its folder (via `cd`) and bundle it:
 
-* System dependencies
+```bash
+bundle install
+```
 
-* Configuration
+after which the migrations will take care of the database structure and initial data (for those [cold,warm,hot] initial values). Run:
 
-* Database creation
+```bash
+rake db:migrate
+```
 
-* Database initialization
+and finally run the Rails server to see it in action (at localhost:3000)
 
-* How to run the test suite
+```bash
+rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Enjoy!
