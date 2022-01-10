@@ -1,6 +1,6 @@
 # How Hot is it Today?
 
-`How Hot is it Today?` is a demo Rails application that can tell you if the weather is either cold, warm or hot, based on some predefined (but editable) ranges. I developed it as a technical assignment to serve for my technical interview.
+`How Hot is it Today?` is a demo Rails application that can tell you if the weather is either cold, warm or hot, based on some predefined (but editable) ranges.
 
 ## Installation
 
